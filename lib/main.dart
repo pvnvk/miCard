@@ -45,44 +45,41 @@ void main() {
                         color: Colors.teal.shade100
                     ),
                   ),
-                  Container(
-                    margin: EdgeInsets.fromLTRB(30, 30, 30, 10),
-                    padding: EdgeInsets.all(10.0),
-                    color: Colors.white,
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.phone,
-                          color: Colors.teal,
-                        ),
-                        SizedBox(
-                          width: iconImageSpacing,
-                        ),
-                        Text(
-                          '+91 1234567890',
-                          style: infoTxtStyle,
-                        )
-                      ],
+                  SizedBox(
+                    height: 20,
+                    width: 150,
+                    child: Divider(
+                      color: Colors.teal.shade100,
                     ),
                   ),
-                  Container(
+                  Card(
                     margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-                    padding: EdgeInsets.all(10.0),
                     color: Colors.white,
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.email,
-                          color: Colors.teal,
-                        ),
-                        SizedBox(
-                          width: iconImageSpacing,
-                        ),
-                        Text(
-                          'tom@thomas.com',
-                          style: infoTxtStyle,
-                        )
-                      ],
+                    elevation: 4,
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.phone,
+                        color: Colors.teal,
+                      ),
+                      title: Text(
+                        '+91 1234567890',
+                        style: infoTxtStyle,
+                      ),
+                    ),
+                  ),
+                  Card(
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+                    color: Colors.white,
+                    elevation: 4,
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.email,
+                        color: Colors.teal,
+                      ),
+                      title: Text(
+                        'tom@thomas.com',
+                        style: infoTxtStyle,
+                      ),
                     ),
                   ),
                 ],
